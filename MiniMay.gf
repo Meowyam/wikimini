@@ -20,6 +20,17 @@ lin state_3_N = mkN "negeri";
 lin to_1_Prep = G.to_Prep;
 lin west_2_N = mkN "barat";
 lin with_Prep = G.with_Prep;
+lin asia_2_PN = mkPN "Asia";
+lin balkans_2_PN = mkPN "Balkan";
+lin delaware_5_N = mkN "Delaware";
+lin greenland_PN = mkPN "Greenland";
+lin haida_N = mkN "Haida";
+lin middle_east_9_PN = mkPN "Timur Tengah";
+lin north_america_1_PN = mkPN "Amerika Utara";
+lin saint_pierre_and_miquelon_2_PN = mkPN "Saint-Pierre dan Miquelon";
+lin seneca_N = mkN "Seneca";
+lin square_1_N = mkN "empat segi";
+
 
 -- incluced in version 1
 lin abu_dhabi_PN = mkPN "Abu Dhabi" ;
@@ -222,7 +233,7 @@ lin haitian_creole_N = mkN "Bahasa Kreol Haiti" ;
 lin hanoi_PN = mkPN "Hanoi";
 lin harare_PN = mkPN "Harare" ;
 lin havana_PN = mkPN "Havana";
-lin have_1_V2 = G.have_V2;
+lin have_1_V2 = mkV2 "punyai";
 lin helsinki_PN = mkPN "Helsinki" ;
 lin hindi_N = mkN "Hindi" ;
 lin hindustani_2_N = mkN "Bahasa Hindustani";
