@@ -11,7 +11,7 @@ lin language_1_N = mkN "bahasa";
 lin north_3_N = mkN "utara";
 lin north_east_N = mkN "timur laut";
 lin northwest_2_N = mkN "barat laut";
-lin on_1_Prep = G.on_Prep;
+lin on_1_Prep = G.in_Prep;
 lin south_3_N = mkN "selatan";
 lin south_east_N = mkN "tenggara";
 lin south_west_N = mkN "barat daya";
@@ -233,7 +233,11 @@ lin haitian_creole_N = mkN "Bahasa Kreol Haiti" ;
 lin hanoi_PN = mkPN "Hanoi";
 lin harare_PN = mkPN "Harare" ;
 lin havana_PN = mkPN "Havana";
-lin have_1_V2 = mkV2 "punyai";
+lin have_1_V2 = let like' : V2 = mkV2 "punyai" in like' ** {
+  s = table {
+    Passive => "dipunyai" ;
+    _ => "mempunyai"} ;
+};
 lin helsinki_PN = mkPN "Helsinki" ;
 lin hindi_N = mkN "Hindi" ;
 lin hindustani_2_N = mkN "Bahasa Hindustani";
